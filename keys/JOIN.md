@@ -34,5 +34,6 @@ The conditions selected by the teacher in UIUX are passed here to determine how 
    <example>If class='BCP-180' then generate the following list:
 
    </example>
+</query>
 
 The query results are passed back to the right side of the GUI.
