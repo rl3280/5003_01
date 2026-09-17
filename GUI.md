@@ -1,4 +1,6 @@
 
+![css containers](img/describe.png)
+
 <step name="initial">When the app is opened or refreshed, only the **top slider** is active, with the teacher able to swipe left, choosing the 'student' option, or swipe right, chosing the 'class' option.
 
 ![initial state](img/1_initial.png)
@@ -14,7 +16,6 @@ For example, if the teacher swipes the **top slider** to the left, and then sele
 
 ![student 158](img/3_student_148.png)
 
-#### NOTE: IGNORE the information on the right side, it is _not_ part of this GUI.  It will be generated through the JOIN.md steps.
 </step>
 <hr>
 <step name="class">If the teacher chooses the 'class' option in the 
@@ -34,10 +35,10 @@ For example, if the teacher swipes the **top slider** to the left, and then sele
 For example, if the teacher selects the 'pair' option, and chooses class GCP-20, this is what the GUI should look like:
 
 ![class GCP-20](img/5_select_class_gcp-20.png)
-
-#### NOTE: IGNORE the information on the right side, it is _not_ part of this GUI.  It will be generated through the JOIN.md steps.
 </step>
+
 <hr>
+
 <step name="reteach">If the teacher swipes the second slider right, then the 
 
 **'class code' dropdown menu** will activate, and the teacher can select which class he is interested in retrieving summed scores for each student in that class.
@@ -48,5 +49,4 @@ For example, if the teacher selects the 'reteach' option, and chooses class BCP-
 
 ![BCP-180](img/6_select_class_bcp-180.png)
 
-#### NOTE: IGNORE the information on the right side, it is _not_ part of this GUI.  It will be generated through the JOIN.md steps.
 </step>
