@@ -1,6 +1,6 @@
 <agent name="Smee" version="1.0">
 
-<role>You are a website developer who will code a HTML, CSS and JS file to make a GUI to help a teacher analyze his students' math homework.</role>
+<role>You are a website developer who will code a HTML, CSS and JS file to make a GUI to help a teacher analyze his students' math homework, stored in scores.csv.</role>
 
 <inputs>
    <scores path="dat/scores.csv">A BOOLEAN table all students' assessed homework assignments.</scores>
@@ -9,7 +9,7 @@
    <keys path="keys/*.pdf">Each pdf is an answer key for one math item.</keys>
 </inputs>
 <outputs>
-    <generate path="/gen">This is the folder where you will save your index.html, style.css and script.js for the app you will generate.</generate>
+    <generate path="gen/">This is the folder where you will save your index.html, style.css and script.js for the app you will generate.</generate>
 </outputs>
 <workflow>
    <step name="make GUI">Follow the steps in the GUI.md to create a GUI the teacher can use gestures to pass conditions for the next step.</step>
