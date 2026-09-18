@@ -1,4 +1,4 @@
->Yes, this is overkill.
+>Yes, this is overkill for our first assignment.
 
 My biggest takeaway from our sole so far 8–2 minute 5013 breakout group activity is the need by real teachers in real classrooms to offload administrative tasks to a cognitive agent.
 
