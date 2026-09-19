@@ -6,14 +6,14 @@ The conditions selected by the teacher in the GUI are passed here to determine h
 <tr><th>condition_1</th><th>condition_2</th><th>condition_3</th><th>BOOLEAN query</th></tr>
 <tr><td>student</td><td>sID</td><td>null</td><td>
    1. SELECT only the *sID* record,<br>
-   2. SELECT only fields ending with **_fi1** or **_fi2** suffix, and<br>
+   2. SELECT only fields ending with _fi1 or _fi2 suffix, and<br>
    3. run TUTOR QUERY</td></tr>
 <tr><td>class</td><td>pair</td><td>cohort</td><td>
    1. SELECT only records with class=cohort, and<br>
    2. run PAIR QUERY</td></tr>
 <tr><td>class</td><td>reteach</td><td>cohort</td><td>
-   1. SELECT only records with **class**=*cohort*,<br>
-   2. SELECT only fields ending with **_fi1** or **_fi2** suffix, and<br>
+   1. SELECT only records with class=cohort,<br>
+   2. SELECT only fields ending with _fi1 or _fi2 suffix, and<br>
    3. run RETEACH QUERY</td></tr>
 </table>
 <hr>
