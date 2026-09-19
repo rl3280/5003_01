@@ -1,6 +1,6 @@
 # Data Dictionary for scores.csv
 
-#### NOTE: scores.csv is a BOOLEAN table that only records whether the student got the question right or wrong.  Comparing the student's answer to the answer key has already been checked, so no actual answers (numbers) exist in this table.
+#### NOTE: <a href="dat/scores.csv">scores.csv</a> is a BOOLEAN table that only records whether the student got the question right or wrong.  Comparing the student's answer to the answer key has already been checked, so no actual answers (numbers) exist in this table.
 
 - First row is the header, with each column in the header row is a unique *field code*, for example, **1f_fi1**.
 - Each subsequent row is a *student record*, indexed by the first column, **sID**.  Each **sID** is unique.
