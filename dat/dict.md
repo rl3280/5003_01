@@ -13,7 +13,7 @@
 <table>
 <tr><th>header code</th><th>description</th></tr>
 <tr><td>sID</td><td>Student's identification code.  No personal student information will be used in this app.</td></tr>
-<tr><td>class</td><td>A unique idenfier for each of the teacher's classes.  For example, student 150 was in **class** 'bcp-177'.</td></tr>
+<tr><td>class</td><td>A unique idenfier for each of the teacher's classes.  For example, student 150 was in class 'bcp-177'.</td></tr>
 <tr><td>_fi1</td><td>Any header that ends in _fi1 is the first feet & inches assignment: adding and subtracting feet and inches.  The number in front of _fi1 indicates the problem number, and the 'f' or 'i' indicates the number of feet and inches of the student's answer for that question.  For example, 6i_fi1 means the number of inches the student answered to question 6.</td></tr>
 <tr><td>_fi2</td><td>Any header that ends in _fi2 is the second feet & inches assignment: adding multiple lengths of feet and inches.  The number in front of _fi2 indicates the problem number, and the 'f' or 'i' indicates the number of feet and inches of the student's answer for that question.  For example, 3f_fi2 means the number of feet the student answered to question 3.</td></tr>
 <tr><td>_fi3</td><td>Any header that ends in _fi3 is the third feet & inches assignment: spatial reasoning "find the missing side and perimeter," adding and subtracting feet and inches.  The number in front of _fi3 indicates the problem number, and the 'f' or 'i' indicates the number of feet and inches of the student's answer for that question.  For example, 5i_fi3 means the number of inches the student answered to question 5.</td></tr>
