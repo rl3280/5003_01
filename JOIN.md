@@ -17,7 +17,10 @@ The conditions selected by the teacher in the GUI are passed here to determine h
    3. run RETEACH QUERY</td></tr>
 </table>
 <hr>
-<query id="1">TUTOR QUERY
+
+#### TUTOR QUERY
+
+<query id="1">
 
    1. <step>LIST any *field code* with a FALSE value.</step>
 
@@ -33,7 +36,10 @@ The conditions selected by the teacher in the GUI are passed here to determine h
    </example>
 </query>
 <hr>
-<query id="2">PAIR QUERY
+
+#### PAIR QUERY
+
+<query id="2">
 
    1. <step>COUNT all TRUE values for each *student record*.</step>
    2. <step>DELETE any *student record* from this query that has a total is LESS THAN 50.</step>
@@ -57,7 +63,10 @@ The conditions selected by the teacher in the GUI are passed here to determine h
    </example>
 </query>
 <hr>
-<query id="3"> RETEACH QUERY
+
+#### RETEACH QUERY
+
+<query id="3">
 
    1. <step>COUNT all TRUE values in each *field code*.</step>
    2. <step>Create a list of the three lowest TRUE totals.</step>
