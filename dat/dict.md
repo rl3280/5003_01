@@ -3,10 +3,10 @@
 #### NOTE: <a href="scores.csv">scores.csv</a> is a BOOLEAN table that only records whether the student got the question right or wrong.  Comparing the student's answer to the answer key has already been checked, so no actual answers (numbers) exist in this table.
 
 - First row is the header, with each column in the header row is a unique *field code*, for example, **1f_fi1**.
-- Each subsequent row is a *student record*, indexed by the first column, **sID**.  Each **sID** is unique.
-- The second field is the **class** field.  This field is does _not_ have unique identifiers, each value represents a *cohort*, one of several classes the teacher is responsible for, e.g., 'gcp-18'.
-- A *math item* is all of the columns that end in the same suffix, e.g., the 16 columns following the **class** field all end in '_fi1', therefore those 16 fields consist of one *math item*.
-- A *question* is the number at the beginning of a *field code*.  For example **2f_fi2** represents *question* #2 of the fi2 *math item*.
+- Each subsequent row is a *student record*, indexed by the first *field code*, **sID**.  Each **sID** *student record* is unique.
+- The second *field code* is **class**.  Each value represents a *cohort*, one of several classes the teacher is responsible for, e.g., 'gcp-18'.
+- A *math item* is all of the *field codes* that end in the same suffix, e.g., the 16 *field codes** to the right of **class** all end in **_fi1**, therefore those 16 fields consist of one *math item*.
+- A *question* is the number at the beginning of a *field code*.  For example **2f_fi2** represents Question #2 of the **fi2** *math item*.
 
 ![BOOLEAN table layout](../img/data-dict.png)
 
