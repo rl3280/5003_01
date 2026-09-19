@@ -10,6 +10,8 @@
 
 ![BOOLEAN table layout](../img/data-dict.png)
 
+#### The agent will use this data dictionary to translate (->) *field codes* reported out in a query to ordinary language the teacher can understand.
+
 <table>
 <tr><th>header code</th><th>description</th><th>example</th></tr>
 <tr><td>sID</td><td>Student's identification code.</td><td></td></tr>
