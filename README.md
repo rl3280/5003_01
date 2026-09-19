@@ -7,9 +7,9 @@ I want my agent to code a HTML, CSS and JS file to make an app that can pass a t
 
 #### Prompt it
 
-- **AGENT.md**  I
-- **GUI.md**
-- **JOIN.md**
-- **Data dictionary.**  Help for the cognitive agent to translate (->) *field codes* in ordinary language when reporting back the results of the query.
+- <a href="AGENT.md">AGENT.md</a>  I
+- <a href="GUI.md">GUI.md</a>
+- <a href="JOIN.md">JOIN.md</a>
+- <a href="DICT.md>DICT.md</a>  Help for the cognitive agent to translate (->) *field codes* in ordinary language when reporting back the results of the query.
 
 #### Reflect on it
