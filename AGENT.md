@@ -49,6 +49,8 @@
       2. any student data other than <a href="dat/scores.csv">scores.csv</a>
       3. the answer keys in the keys/ folder
 
+   You will MINIMIZE token use.  For example, if you can't code the correct answer to an example in <a href="GUI.md">GUI.md</a> after more than a few retries, you will stop and ask questions for further clarification.
+
 </guardrails>
 
 <testing_validation>
