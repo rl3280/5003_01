@@ -1,35 +1,55 @@
+# Building a GUI for a teacher to choose how to analyze his students' assessed trades math homeworks.
 
-The attached pngs wireframes sketch how the GUI should look like at various step.  
+The attached pngs wireframes sketch how the GUI should look like at various steps.  
 Here are all of the CSS containers of the interface:
 ![css containers](img/describe.png)
 
+#### GUI Steps
+Steps have an '@' character in front of them. 
+
+@reset -> ├── @student
+          ├               
+          ├── @class -> ├── @pair
+                        ├          
+                        ├── @reteach
+
 #### CSS Element Descriptions
-Each element is surrounded by brackets [].
+- Each element is surrounded by brackets [].
+- *Italics* are teacher *gestures, swipe/click*
+- **Bold** refers to a header code in <a href="JOIN.md">JOIN.md</a>
+- {} is an encoded *gesture*
+- ALL CAPS are names of the affordances the teacher may choose from
 
-Most elements have two {states}
-1. INACTIVE (default)
-2. ACTIVE (teacher's *gesture*)
+##### Most elements have two {states}
+1. INACTIVE (default): grey colors, *gestures* are INACTIVE
+2. ACTIVE primary colors, *gestures* are ACTIVE
 
-[background] Contains the entire browser window.  
+[background] Contains the entire browser window, is ALWAYS ACTIVE  
    Color:DeepSkyBlue, #00BFFF;
-[reset button] This rounded box is ALWAYS ACTIVE.  When *clicked*, the app returns to the @reset step. 
+
+[reset button] This rounded box is ALWAYS ACTIVE.  When *clicked*, the app returns to @reset 
    background-color:LightSalmon, #FFA07A;
    color:LightCoral, #F08080;
-[GO_button] This rounded box, when {state}=ACTIVE, the teacher can *click* on it, and send {Condition_1}, {Condition_2} and {Condition_3} to the query described in <a href="JOIN.md">JOIN.md</a>
+
+[GO_button] This rounded box, when {state}=ACTIVE, the teacher can *click* on it, and pass {Condition_1}, {Condition_2} and {Condition_3} to the query described in <a href="JOIN.md">JOIN.md</a>
    IF {state}=INACTIVE, THEN
       background-color:Beige, #F5F5DC;
       color:DarkGray, #A9A9A9;
    IF {Condition_1}, {Condition_2} and {Condition_3} NOT NULL, THEN {state}=ACTIVE
       background-color:LightGreen, #90EE90;
       color:DarkSeaGreen, #8FBC8F;
+
 [student] This text box is ALWAYS ACTIVE.
    background-color:transparent;
    color:Red, #FF0000;
+
 [class] This text box is ALWAYS ACTIVE.
    background-color:transparent;
    color=Red, #FF0000;
+
 [top_container] This rectangle box is ALWAYS ACTIVE.
    background-color:AliceBlue, #F0F8FF;
+
 [pair] A text box 
    IF {state}=INACTIVE THEN
       background-color:transparent;
@@ -37,6 +57,7 @@ Most elements have two {states}
    IF {state}=ACTIVE THEN
       background-color:transparent;
       color=Red, #FF0000;
+
 [cohort] A text box
    IF {state}=INACTIVE THEN
       background-color:transparent;
@@ -44,11 +65,13 @@ Most elements have two {states}
    IF {state}=ACTIVE THEN
       background-color:transparent;
       color=Red, #FF0000;
+
 [second_container] A rectangle box
    IF {state}=INACTIVE THEN
       background-color:Ivory, #FFFFF0;
    IF {state}=ACTIVE THEN
       background-color:AliceBlue, #F0F8FF;
+
 [ID_dropdown_menu] listing all sIDs in <a href="dat/scores.csv">scores.csv</a>, from 101 to 255.
    IF {state}=INACTIVE THEN
       background-color:transparent;
@@ -56,6 +79,7 @@ Most elements have two {states}
    IF {state}=ACTIVE THEN
       background-color:transparent;
       color=Red, #FF0000;
+      
 [cohort_dropdown_menu] listing all the cohorts in the **class** field in <a href="dat/scores.csv">scores.csv</a> -- bcp-176;bcp-177;bcp-178;bcp-179;bcp-180;gcp-18;gcp-19;gcp-20
    IF {state}=INACTIVE THEN
       background-color:transparent;
@@ -63,9 +87,11 @@ Most elements have two {states}
    IF {state}=ACTIVE THEN
       background-color:transparent;
       color=Red, #FF0000;
+
 [slider_1] rectangle is ALWAYS ACTIVE
    background-color:Yellow, #FFFF00;
    opacity:0.5;
+
 [slider_2] is a rectangle
    IF {state}=INACTIVE THEN
       background-color:DarkGray, #A9A9A9;
@@ -82,8 +108,14 @@ Middle Layer: [top_container]; [second_container]
 
 Bottom Layer: [background] 
 
+#### Nested CSS containers
+
+IF second_container.state IS INACTIVE, THEN
+   slider.state IS INACTIVE AND
+   pair.state IS INACTIVE AND
+   cohort.state IS INACTIVE
+
 [slider_1], [student], and [class] are within [top_container]
-[slider_2], [pair], and [cohort] are within [second_container]
 
 #### Decision Steps from *Teacher Gestures*
 
@@ -107,10 +139,7 @@ ID_dropdown_menu.state IS INACTIVE
 cohort_dropdown_menu.state IS INACTIVE
 slider_2.state IS INACTIVE
 
-
 </step>
-
-<hr>
 
 <step name="student">IF the teacher chooses @student by *swiping* the [top slider] left, 
    THEN ID_dropdown_menu.state IS ACTIVE, 
@@ -131,8 +160,6 @@ This is what the GUI should look like:
 </example>
 </step>
 
-<hr>
-
 <step name="class">IF the teacher selects @class from *swiping* the [top slider] right, 
    THEN second_slider.state IS ACTIVE, 
    AND {Condition_1} IS 'Class'
@@ -144,14 +171,12 @@ This is what the GUI should look like:
 
 </step>
 
-<hr>
-
 <step name="pair">IF the teacher selects @pair from *swiping* the [second slider] left, 
    THEN the cohort_dropdown_menu.state IS ACTIVE, 
-   AND {Condition_2} IS PAIR
+   AND {Condition_2} IS 'Pair'
    
    The teacher can *click* [cohort_dropdown_menu] which will set 
-   {Condition_3} IS 'Pair'
+   {Condition_3} IS 'Cohort'
 
 This is what the GUI should look like:
 ![cohort](img/4a_slide_pair.png)
@@ -164,13 +189,17 @@ This is what the GUI should look like:
 </example>
 </step>
 
-<hr>
+<step name="reteach">If the teacher selects @reteach from *swiping* the [second slider] right, 
+   THEN the cohort_dropdown_menu] IS ACTIVE,
+   AND {Condition_2) IS 'Reteach'
+   
+   The teacher can *click* [cohort_dropdown_menu] which will set 
+   {Condition_3} IS 'Cohort'
 
-<step name="reteach">If the teacher selects @reteach from the [second slider], then the [cohort dropdown menu] will activate, and the teacher can select a cohort. 
-
+This is what the GUI should look like:
 ![reteach](img/4b_slide_reteach.png)
 
-<example>if the teacher selects @reteach, and then selects 'BCP-180' from the [cohort dropdown menu], the [GO button] will activate, and this is what the GUI should look like:
+<example>if the teacher *swipes* @reteach, AND *clicks* 'BCP-180' from the [cohort dropdown menu], THEN GO_button.state IS ACTIVE,
 
 This is what the GUI should look like:
 ![BCP-180](img/6_select_class_bcp-180.png)
