@@ -1,22 +1,23 @@
 # Building a GUI for a teacher to choose how to analyze his students' assessed trades math homeworks.
 
 The attached pngs wireframes sketch how the GUI should look like at various steps.  
-Here are all of the CSS containers of the interface:
+
+This is what the CSS containers in the GUI should look like:
 ![css containers](img/describe.png)
 
 #### GUI Steps
 Steps have an '@' character in front of them. 
 
-@reset -> ├── @student
+@reset -> ├── @student -> @GO
           ├               
-          ├── @class -> ├── @pair
+          ├── @class -> ├── @pair -> @GO
                         ├          
-                        ├── @reteach
+                        ├── @reteach -> @GO
 
 #### CSS Element Descriptions
 - Each element is surrounded by brackets [].
 - *Italics* are teacher *gestures, swipe/click*
-- **Bold** refers to a header code in <a href="JOIN.md">JOIN.md</a>
+- **Bold** refers to a header code in <a href="dat/scores.csv">scores.csv</a>
 - {} is an encoded *gesture*
 - ALL CAPS are names of the affordances the teacher may choose from
 
@@ -72,7 +73,7 @@ Steps have an '@' character in front of them.
    IF {state}=ACTIVE THEN
       background-color:AliceBlue, #F0F8FF;
 
-[ID_dropdown_menu] listing all sIDs in <a href="dat/scores.csv">scores.csv</a>, from 101 to 255.
+[ID_dropdown_menu] listing all **sID**s in <a href="dat/scores.csv">scores.csv</a>, from 101 to 255.
    IF {state}=INACTIVE THEN
       background-color:transparent;
       color:DarkGray, #A9A9A9;
@@ -111,7 +112,7 @@ Bottom Layer: [background]
 #### Nested CSS containers
 
 IF second_container.state IS INACTIVE, THEN
-   slider.state IS INACTIVE AND
+   slider_2.state IS INACTIVE AND
    pair.state IS INACTIVE AND
    cohort.state IS INACTIVE
 
@@ -121,23 +122,18 @@ IF second_container.state IS INACTIVE, THEN
 
 When the app is opened OR [reset button] is *clicked*, THEN @reset
 
-<step name="reset">
+<step name="reset">The teacher able to *swipe* [top_slider] left/right, choosing @student/@class.
 
-  The teacher able to *swipe* [top_slider] left/right, choosing @student/@class.
+   {Condition_1} IS NULL
+   {Condition_2} IS NULL
+   {Condition_3} IS NULL
 
+   GO_button.state IS INACTIVE
+   second_container.state IS INACTIVE
+   ID_dropdown_menu.state IS INACTIVE
+
+This is what the GUI should look like:
 ![initial state](img/1_initial.png)
-
-{Condition_1} IS NULL
-{Condition_2} IS NULL
-{Condition_3} IS NULL
-
-GO_button.state IS INACTIVE
-pair.state IS INACTIVE
-cohort.state IS INACTIVE
-second_container.state IS INACTIVE
-ID_dropdown_menu.state IS INACTIVE
-cohort_dropdown_menu.state IS INACTIVE
-slider_2.state IS INACTIVE
 
 </step>
 
@@ -172,7 +168,7 @@ This is what the GUI should look like:
 </step>
 
 <step name="pair">IF the teacher selects @pair from *swiping* the [second slider] left, 
-   THEN the cohort_dropdown_menu.state IS ACTIVE, 
+   THEN second_container.state IS ACTIVE, 
    AND {Condition_2} IS 'Pair'
    
    The teacher can *click* [cohort_dropdown_menu] which will set 
@@ -190,7 +186,7 @@ This is what the GUI should look like:
 </step>
 
 <step name="reteach">If the teacher selects @reteach from *swiping* the [second slider] right, 
-   THEN the cohort_dropdown_menu] IS ACTIVE,
+   THEN second_container.state IS ACTIVE,
    AND {Condition_2) IS 'Reteach'
    
    The teacher can *click* [cohort_dropdown_menu] which will set 
@@ -205,4 +201,20 @@ This is what the GUI should look like:
 ![BCP-180](img/6_select_class_bcp-180.png)
 
 </example>
+</step>
+
+<step name="GO"> [GO_button] is ONLY ACTIVE when
+   {Condition_1}, {Condition_2} AND {Condition_3} ARE NOT NULL
+
+   When ACTIVE, a picture will be visible:
+      IF {Condition_2} IS SID THEN 
+      IF {Condition_2} IS PAIR THEN
+      IF {Condition_2} IS RETEACH THEN 
+
+   when ACTIVE, the teacher can *click* on it, and pass {Condition_1}, {Condition_2} and {Condition_3} to the query described in <a href="JOIN.md">JOIN.md</a>
+
+   Once the [GO_button] is *clicked* @return
+</step>
+
+<step name="return">
 </step>
