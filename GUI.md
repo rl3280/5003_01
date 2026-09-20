@@ -1,5 +1,6 @@
 
-The attached pngs sketches how the GUI should look like at a step.  Here are all of the CSS containers of the interface:
+The attached pngs wireframes sketch how the GUI should look like at various step.  
+Here are all of the CSS containers of the interface:
 ![css containers](img/describe.png)
 
 #### CSS Element Descriptions
@@ -23,7 +24,7 @@ Most elements have two {states}
       color:DarkSeaGreen, #8FBC8F;
 [student] This text box is ALWAYS ACTIVE.
    background-color:transparent;
-   color=Red, #FF0000;
+   color:Red, #FF0000;
 [class] This text box is ALWAYS ACTIVE.
    background-color:transparent;
    color=Red, #FF0000;
@@ -150,12 +151,12 @@ This is what the GUI should look like:
    AND {Condition_2} IS PAIR
    
    The teacher can *click* [cohort_dropdown_menu] which will set 
-   {Condition_3} IS "Pair'
+   {Condition_3} IS 'Pair'
 
 This is what the GUI should look like:
 ![cohort](img/4a_slide_pair.png)
 
-<example>IF the teacher *swipes* @pair, AND THEN *clicks* 'GCP-20' from the [cohort dropdown menu], THEN GO_button.state IS ACTIVE,
+<example>IF the teacher *swipes* @pair, AND *clicks* 'GCP-20' from the [cohort dropdown menu], THEN GO_button.state IS ACTIVE,
 
 This is what the GUI should look like:
 ![class GCP-20](img/5_select_class_gcp-20.png)
