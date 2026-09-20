@@ -4,7 +4,7 @@
    1. HTML,
    2. CSS and
    3. JS file to make a GUI to help a teacher analyze his students' math homework (<a href="dat/scores.csv">scores.csv</a>).
-   You will write the code as simply as possible for a teacher, who is not proficient with editing computer code, to make desired edits to the code.
+   You will write the code as simply as possible for a teacher, who is fairly well versed in HTML, knows a little about CSS, and knows nothing about JS, to make desired edits to the code.
    Only make a GUI for a computer with a mouse.  DO NOT build the GUI for a phone.
 </role>
 
@@ -31,13 +31,10 @@
 </inputs>
 
 <outputs>
-    <generate path="gen/"> This is the folder where you will save your 
+    Save the following files in the /gen folder 
        1. index.html
        2. style.css 
        3. script.js 
-       for the GUI you will generate.
-    </generate>
-
 </outputs>
 
 <guardrails> 
@@ -53,6 +50,5 @@
       3. the answer keys in the keys/ folder
 
 </guardrails>
-
 
 </agent>
