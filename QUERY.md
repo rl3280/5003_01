@@ -1,30 +1,30 @@
-Once the teacher clicks the GO button, pass the conditions expressed by the selections the teacher made with the sliders and dropdown menus to JOIN.
+Once the teacher clicks the GO button in the GUI, pass the 3 conditions to QUERY.
 
-The conditions selected by the teacher in the GUI are passed here to determine how to filter and calculate from the scores.csv BOOLEAN table.
+The conditions selected by the teacher in the GUI are passed here to determine how to filter, calculate and sort from <a href="dat/scores.csv">scores.csv</a>.
 
-<table border="0">
-<tr><th>condition_1</th><th>condition_2</th><th>condition_3</th><th>BOOLEAN query</th></tr>
+<table>
+<tr><th>condition_1</th><th>condition_2</th><th>condition_3</th><th>query</th></tr>
 <tr><td>student</td><td>sID</td><td>null</td><td>
-   1. SELECT only the sID record,<br>
-   2. SELECT only fields ending with _fi1 or _fi2 suffix, and<br>
-   3. run TUTOR QUERY</td></tr>
+   1. SELECT ONLY the sID record
+   2. SELECT ONLY fields ending with _fi1 or _fi2 suffix AND
+   3. RUN TUTOR QUERY</td></tr>
 <tr><td>class</td><td>pair</td><td>cohort</td><td>
-   1. SELECT only records with class=cohort, and<br>
-   2. run PAIR QUERY</td></tr>
+   1. SELECT ONLY records with class=cohort AND
+   2. RUN PAIR QUERY</td></tr>
 <tr><td>class</td><td>reteach</td><td>cohort</td><td>
-   1. SELECT only records with class=cohort,<br>
-   2. SELECT only fields ending with _fi1 or _fi2 suffix, and<br>
-   3. run RETEACH QUERY</td></tr>
+   1. SELECT ONLY records with class=cohort
+   2. SELECT ONLY fields ending with _fi1 or _fi2 suffix AND
+   3. RUN RETEACH QUERY</td></tr>
 </table>
 <hr>
 
 #### TUTOR QUERY
 
-<query id="1">
+<query name="TUTOR">
 
    1. <step>LIST any *field code* with a FALSE value.</step>
 
-   2. <step>Use DICT.md to translate the field codes into ordinary language.</step>
+   2. <step>Use <a href="dat/DICT.md">DICT.md</a> to translate the field codes into ordinary language.</step>
 
    <example>If **sID**=148 then generate the following list:
    - **3i_fi1** -> Feet & Inches Homework #1, Question #3
@@ -35,11 +35,8 @@ The conditions selected by the teacher in the GUI are passed here to determine h
    
    </example>
 </query>
-<hr>
 
-#### PAIR QUERY
-
-<query id="2">
+<query name="PAIR">
 
    1. <step>COUNT all TRUE values for each *student record*.</step>
    2. <step>DELETE any *student record* from this query that has a total is LESS THAN 50.</step>
@@ -62,15 +59,12 @@ The conditions selected by the teacher in the GUI are passed here to determine h
 
    </example>
 </query>
-<hr>
 
-#### RETEACH QUERY
-
-<query id="3">
+<query name="RETEACH">
 
    1. <step>COUNT all TRUE values in each *field code*.</step>
    2. <step>Create a list of the three lowest TRUE totals.</step>
-   3. <step>Use DICT.md to translate the listed *field codes* into ordinary language.</step>
+   3. <step>Use <a href="dat/DICT.md">DICT.md</a> to translate the listed *field codes* into ordinary language.</step>
    
    <example>If **class**='BCP-180' then generate the following list:
 
