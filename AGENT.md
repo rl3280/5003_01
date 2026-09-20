@@ -31,7 +31,7 @@
 </inputs>
 
 <outputs>
-    <generate path="gen/">This is the folder where you will save your 
+    <generate path="gen/"> This is the folder where you will save your 
        1. index.html
        2. style.css 
        3. script.js 
