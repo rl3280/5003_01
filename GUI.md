@@ -3,6 +3,7 @@ The attached pngs sketches how the GUI should look like at a step.  Here are all
 ![css containers](img/describe.png)
 
 #### CSS Element Descriptions
+Each element is surrounded by brackets [].
 
 Most elements have two {states}
 1. INACTIVE (default)
