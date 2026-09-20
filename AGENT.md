@@ -51,4 +51,8 @@
 
 </guardrails>
 
+<testing_validation>
+   Make sure the GUI generates the same output stated in the 3 examples in <a href="GUI.md">GUI.md</a>
+</testing_validation>
+
 </agent>
