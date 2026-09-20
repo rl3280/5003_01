@@ -65,14 +65,14 @@ Most elements have two {states}
       color=Red, #FF0000;
 [slider_1] rectangle is ALWAYS ACTIVE
    background-color:Yellow, #FFFF00;
-   opacity: 0.5;
+   opacity:0.5;
 [slider_2] is a rectangle
    IF {state}=INACTIVE THEN
       background-color:DarkGray, #A9A9A9;
-      opacity: 0.5;
+      opacity:0.5;
    IF {state}=ACTIVE THEN
       background-color:Yellow, #FFFF00;
-      opacity: 0.5;
+      opacity:0.5;
 
 #### CSS Elements Layers
 
