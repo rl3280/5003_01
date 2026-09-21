@@ -16,9 +16,7 @@ The conditions selected by the teacher in the GUI are passed here to determine h
    2. SELECT ONLY fields ending with _fi1 or _fi2 suffix AND
    3. RUN RETEACH QUERY</td></tr>
 </table>
-<hr>
 
-#### TUTOR QUERY
 
 <query name="TUTOR">
 
