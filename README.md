@@ -6,7 +6,7 @@ I want my AI tool to code a HTML, CSS and JS file to make an app that can pass a
 3. Reteach
 
 #### Prompt it
-NOTE: If you want to read these, make sure you are in 'Code', not "Preview" as I used XML pseudo code to make it easier (?) for the cognitive agent to digest.
+NOTE: Humans should read these files in 'Code', not "Preview." I used XML pseudo code to make it easier (?) for the cognitive agent to digest.
 
 - <a href="AGENT.md">AGENT.md</a> Objectives and Specifications for the AI tool.
 - <a href="GUI.md">GUI.md</a> How the GUI should look and interact with the teacher to codify 3 conditions, which are passed to QUERY.
