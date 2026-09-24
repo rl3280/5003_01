@@ -1,6 +1,6 @@
 #### Describe it
 
-Trades math journeypersons spend almost all of our time with our apprentices, on the worksite.  We generate a lot of assessed data with our apprentices.  Unfortunately, formatting the data for program manager reports is about as far as we can go—using it to better serve our apprentices simply is a non-starter.  I want to code a HTML, CSS and JS file to make an app that can pass a teacher's *swipes* and *clicks* into a query, and then filter, calculate and sort anonymized student homework assessments (<a href="dat/scores.csv">scores.csv</a>) and report back whichever of the three learning opportunities the journeyperson chooses to afford:
+Trades math journeypersons spend almost all of our clocked time with our apprentices, on the worksite.  We generate a lot of assessed data with our apprentices.  Unfortunately, formatting the data for program manager reports is about as far as we can go—using it to better serve our apprentices simply is a non-starter.  I want to code a HTML, CSS and JS file to make an app that can pass a teacher's *swipes* and *clicks* into a query, and then filter, calculate and sort anonymized student homework assessments (<a href="dat/scores.csv">scores.csv</a>) and report back whichever of the three learning opportunities the journeyperson chooses to afford:
 1. One-on-one remediation tutoring
 2. In-class pair-and-share
 3. Reteach
@@ -26,7 +26,7 @@ It did a great job, identifying inconsistencies in my naming CSS containers (e.g
 
 It didn't like the <XML> pseudocode though.  Maybe it's because I'm using CoPilot.
 
-It also didn't like my <HTML> tags.  But making tables, which I have been doing ever since reading <a href="https://www.amazon.com/-/es/Laura-Lemay/dp/1575210967" target="_blank">Laura Lemay's HTML 3.2</a>, I know how to do well, and I'd like to think the agent could easily reformat.
+It also didn't like my <HTML> tags.  But making tables, which I have been doing ever since reading <a href="https://www.amazon.com/-/es/Laura-Lemay/dp/1575210967" target="_blank">Laura Lemay's HTML 3.2</a>, I know how to do well, and I'd like to think the agent could easily reformat.  Compare [diff] between <a href="QUERY.md">QUERY.md</a> and <a href="QUERY_bak.md">QUERY_bak.md</a>
 
 More importantly, it laid out a very clear template for me to use when writing the steps to produce the GUI, including.
 1. defining single app state steps, a "small state machine."  I don't know what that means.
