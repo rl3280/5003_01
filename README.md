@@ -36,7 +36,7 @@ More importantly, it laid out a very clear template for me to use when writing t
 
 It also said, "Do not scatter state into many different DOM checks."  Again, I don't know what this means, so I have to reiterate my "simple and organize" rule.
 
-The same thing for QUERY.  This is where the JS lies, which I really know nothing about, so I asked it to make a beginner-friendly JavaScript outline (<a href="JS_outline">JS_outline</a>).
+The same thing for QUERY.  This is where the JS lies, which I really know nothing about, so I asked it to make a beginner-friendly JavaScript outline (<a href="JS_outline.md">JS_outline</a>).
 
 I'm totally lost reading it, but my agent ended by saying,
 
@@ -51,5 +51,5 @@ So I felt better.
 
 Then I shut it down, and spooled up a new chat, the first prompt is at the bottom of <a href="chat.md">chat.md</a>
  
-Then <a href="the_whole_enchilada">the_whole_enchilada</a>.
+Then <a href="the_whole_enchilada.md">the_whole_enchilada</a>.
  
