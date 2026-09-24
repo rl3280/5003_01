@@ -307,3 +307,66 @@ That gives you a clean target for the actual implementation in HTML, CSS, and Ja
 You’ve done the right thing by pausing here. We can build the code next once this structure feels solid.
 
 Thanks for the patience, and we’ll pick it up when you’re ready.
+
+No, that's where we left it last time.  What I need you to do now is read the QUERY.md file, which is the next part to connect to the GUI.  It is a deterministic tool, so it simply takes the passed state conditions, and uses them to run 1 of 3 queries, and them pass back the results to the GUI.
+
+Once again, before coding anything, I would like you to use simple computation concepts and ORGANIZE the outputs.
+
+Remember, I am a trades math teacher who is a HTML expert, knows a little CSS, and nothing about javascript, so you have to make it simple so I can figure out how to edit it correctly.
+
+## Best initial prompt for the new chat
+
+Use this as the first message in the new session:
+
+> I’m working on a small HTML/CSS/JavaScript app for a teacher dashboard. The project already has the design plan in `chat.md` and the query rules in QUERY.md.  
+>  
+> Please help me build the app in a simple, beginner-friendly way for a teacher who is an HTML expert, knows a little CSS, and knows nothing about JavaScript.  
+>  
+> Requirements:
+> - Start with the GUI state machine from `chat.md`
+> - Use the 3 conditions: condition_1, condition_2, condition_3
+> - Implement the state flow:
+>   - reset
+>   - Student vs Class
+>   - sID or Pair/Reteach
+>   - cohort selection
+>   - enable GO only when all selections are valid
+> - Use a render() function to update the UI state
+> - Keep the code simple, readable, and easy to edit
+> - Use plain JavaScript without frameworks
+> - Then connect the GUI to the deterministic query logic in `QUERY.md`
+> - Use the query decision table:
+>   - Student + sID → TUTOR query
+>   - Class + Pair + cohort → PAIR query
+>   - Class + Reteach + cohort → RETEACH query
+> - Keep the output in simple result objects so the GUI can display them cleanly
+> - Please explain each section in plain language, not advanced JavaScript jargon
+> - Please make the code organized and beginner-friendly, with one function per responsibility
+> - Do not over-engineer it; keep it practical and easy to understand
+>  
+> Please begin by creating:
+> 1. the HTML structure
+> 2. the CSS state classes
+> 3. the JavaScript state object and render function
+> 4. the query selector function that calls the correct query
+>  
+> Then we can build the actual query functions from QUERY.md.
+
+---
+
+## Why this prompt is strong
+
+It gives the new assistant:
+
+- the full project context
+- the exact state rules
+- the exact query logic
+- the teaching level and coding constraints
+- a safe, structured order to build the app
+
+That makes it much more likely the new session will produce code that matches your project instead of inventing a different design.
+
+If you want, I can also give you:
+- a shorter version of this prompt
+- a more direct “start coding now” version
+- or a version tailored specifically for a first HTML + JS build step.

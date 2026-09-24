@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trades Math Teacher Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="background">
+    <h1>Trades Math Teacher Dashboard</h1>
+
+    <button id="resetButton" type="button">Reset</button>
+
+    <section id="top_container" class="container active">
+      <h2>Choose a path</h2>
+      <div class="choice-row">
+        <button id="studentLabel" class="choice inactive" type="button">Student</button>
+        <button id="classLabel" class="choice inactive" type="button">Class</button>
+      </div>
+      <p id="topSlider" class="slider active">Choose Student or Class</p>
+    </section>
+
+    <section id="second_container" class="container inactive">
+      <h2>Choose a class activity</h2>
+      <div class="choice-row">
+        <button id="pairLabel" class="choice inactive" type="button">Pair</button>
+        <button id="cohortLabel" class="choice inactive" type="button">Reteach</button>
+      </div>
+      <p id="secondSlider" class="slider disabled">Choose Pair or Reteach</p>
+    </section>
+
+    <section class="selections">
+      <label id="sIDLabel" class="inactive" for="sIDDropdown">Student ID</label>
+      <select id="sIDDropdown" class="dropdown inactive" disabled>
+        <option value="">Choose a student</option>
+      </select>
+
+      <label id="cohortSelectLabel" class="inactive" for="cohortDropdown">Cohort</label>
+      <select id="cohortDropdown" class="dropdown inactive" disabled>
+        <option value="">Choose a cohort</option>
+      </select>
+    </section>
+
+    <button id="goButton" class="disabled" type="button" disabled>GO</button>
+
+    <section id="resultArea" class="result-area" aria-live="polite">
+      <h2 id="resultTitle">Results will appear here</h2>
+      <div id="resultContent">Make a selection, then choose GO.</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
