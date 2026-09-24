@@ -25,6 +25,7 @@ It loved me describing <a href="QUERY.md">QUERY.md</a> as a "deterministic tool.
 It did a great job, identifying inconsistencies in my naming CSS containers (e.g., 'slider_1' in some places, 'top_slider' in others).
 
 It didn't like the <XML> pseudocode though.  Maybe it's because I'm using CoPilot.
+It also didn't like my <HTML> tags.  But making tables, which I have been doing ever since reading <a href="https://www.amazon.com/-/es/Laura-Lemay/dp/1575210967">Laura Lemay's HTML 3.2</a>, I know how to do well, and I'd like to think the agent could easily reformat.
 
 More importantly, it laid out a very clear template for me to use when writing the steps to produce the GUI, including.
 1. defining single app state steps, a "small state machine."  I don't know what that means.
