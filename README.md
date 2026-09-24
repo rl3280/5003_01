@@ -7,7 +7,7 @@ I to code a HTML, CSS and JS file to make an app that can pass a teacher's *swip
 
 #### Prompt it
 ~~NOTE: Humans should read these files in 'Code', not "Preview." I used XML pseudo code to make it easier (?) for the cognitive agent to digest.~~ 
-(ed. nope, not easier, see below)
+(*ed.* nope, not easier, see below)
 
 - <a href="AGENT.md">AGENT.md</a> Objectives and Specifications for the AI tool.
 - <a href="GUI.md">GUI.md</a> How the GUI should look and interact with the teacher to codify 3 conditions, which are passed to QUERY.
@@ -20,7 +20,7 @@ Before I had the agent generate the HTML, CSS and JS files, I had it read throug
 1. use simple computations conepts and
 2. organize the outputs
 
-It loved me describing it as a "deterministic tool."
+It loved me describing <a href="QUERY.md">QUERY.md</a> as a "deterministic tool."
 
 It did a great job, identifying inconsistencies in my naming CSS containers (e.g., 'slider_1' in some places, 'top_slider' in others).
 
@@ -31,8 +31,8 @@ More importantly, it laid out a very clear template for me to use when writing t
 2. drop down menu behavior
 3. validation logic
 4. a render function (I have no idea what that means)
-5. an event model
-6. an implementation order
+5. an event model (ditto)
+6. an implementation order (see above)
 
 It also said, "Do not scatter state into many different DOM checks."  Again, I don't know what this means, so I have to reiterate my "simple and organize" rule.
 
@@ -51,5 +51,5 @@ So I felt better.
 
 Then I shut it down, and spooled up a new chat, the first prompt is at the bottom of <a href="chat.md">chat.md</a>
  
->Then <a href="the_whole_enchilada">the_whole_enchilada</a>.
+Then <a href="the_whole_enchilada">the_whole_enchilada</a>.
  
