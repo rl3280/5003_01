@@ -78,4 +78,4 @@ And besides, upon reflection, the audience I designed this tool for really don't
 
 **PLEASE NOTE:** the actual product is buried in the /gen folder.
 
-> You can see the final product at the <a href="ubercrawl.net">ubercrawl</a>
+> You can see the final product at the <a href="https://ubercrawl.net/5003/1/gen/">ubercrawl</a>
