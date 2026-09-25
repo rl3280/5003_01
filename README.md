@@ -9,6 +9,7 @@ I want to code a HTML, CSS and JS file to make an app that can pass a teacher's 
 
 #### Prompt it
 <hr>
+
 ~~NOTE: Humans should read these files in 'Code', not "Preview." I used XML pseudo code to make it easier (?) for the cognitive agent to digest.~~ 
 (*ed.* nope, not easier, see below)
 
